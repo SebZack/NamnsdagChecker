@@ -36,7 +36,7 @@ public class Main {
 
     }
     public static void checkNameOfDate() {
-        System.out.println("Oh fuck you hjkagain");
+        System.out.println("Oh fuck you again");
 
     }
 
