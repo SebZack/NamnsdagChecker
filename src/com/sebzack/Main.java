@@ -1,7 +1,8 @@
 package com.sebzack;
 
 import java.util.Scanner;
-
+import java.io.*;
+import static java.lang.System.*;
 
 public class Main {
 
@@ -36,8 +37,17 @@ public class Main {
 
     }
     public static void checkNameOfDate() {
-        System.out.println("Oh fuck you again");
+        try {
+            FileReader fr = new FileReader(namndagar.txt);
+            BufferdReader br = new BufferdReader(fr);
 
+            String str;
+            while ((str = br.readLine()) != null) {
+                out.println(str + "/n");
+            }
+            br.close(); }
+        catch (IOExeption e) {
+            out.println("File not found")
+        }
     }
-
 }
